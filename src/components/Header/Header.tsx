@@ -15,7 +15,7 @@ export function Header() {
       <div className="flex-none pl-[64px]">
         <img src={logo} alt="logo do projeto" className="w-[76.1px] h-[58.26px]" />
       </div>
-      <div className="flex-1 text-center">
+      <div className="flex-1 text-center font-montserratAlt">
         <p className="inline-block mx-4 text-[26px] text-colorThree font-medium">Sobre</p>
         <p className="inline-block mx-4 text-[26px] text-colorThree font-medium">Produto</p>
         <p className="inline-block mx-4 text-[26px] text-colorThree font-medium">FAQ</p>

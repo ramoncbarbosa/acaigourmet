@@ -1,7 +1,7 @@
 import closed from "../../../public/Menu/closed.svg";
 import acai from "../../../public/Menu/acai.svg";
 import menuData from "./Menu.json"; 
-import { useState, useNavigate } from "react";
+import { useState } from "react";
 
 interface AcaiItem {
   title: string;
