@@ -10,7 +10,6 @@ export default function App() {
       <Routes>
         <Route path="/" element={<About/>} />
       </Routes>
-
     </BrowserRouter>
   )
 }

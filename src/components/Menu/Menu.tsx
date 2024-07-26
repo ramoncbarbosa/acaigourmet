@@ -19,15 +19,9 @@ export default function Menu({ onClose }: MenuProps) {
 
   return (
     <div
-      className="absolute top-0 right-0 bg-white shadow-lg rounded-lg p-4 border z-50"
-      style={{
-        width: '508px',
-        height: '887px',
-        opacity: '1',
-      }}
-    >
+      className="absolute top-0 right-0 bg-white shadow-lg rounded-lg p-4 border z-50 w-[508px] h-[887px] opacity-100">
       <div className="flex justify-between items-center mb-4">
-        <p className="text-[22px] font-semibold text-colorThree mt-[57px] ml-[64px]">Seu Carrinho!</p>
+        <p className="text-[22px] font-semibold text-colorThree mt-[57px] ml-[22px]">Seu Carrinho!</p>
         <button onClick={onClose} className="rounded-full w-[50px] h-[50px] bg-colorTwo border-2 border-colorFour mt-[50px] mr-[51px]">
           <img src={closed} alt="fechar menu" className="w-[16px] h-[28px] p-[11px]" />
         </button>
@@ -46,6 +40,25 @@ export default function Menu({ onClose }: MenuProps) {
             </div>
           </div>
         ))}
+      </div>
+      <div className="pt-[90px] pl-[24px] flex flex-row gap-4 justify-between">
+        <div className="pl-[10px]">
+          <p className="text-colorThree font-semibold text-[18px]">Compra:</p>
+          <p className="text-colorThree font-semibold text-[18px]">Desconto:</p>
+          <p className="text-colorThree font-semibold text-[18px]">Taxa de Entrega:</p>
+          <p className="text-colorThree font-semibold text-[18px]">Total:</p>
+        </div>
+        <div className="pr-[40px]">
+          <p className="text-colorFour font-semibold text-[18px]">R$ 36,00</p>
+          <p className="text-colorFour font-semibold text-[18px]">R$ 00,00</p>
+          <p className="text-colorFour font-semibold text-[18px]">R$ 00,00</p>
+          <p className="text-colorFour font-semibold text-[18px]">R$ 36,00</p>
+        </div>
+      </div>
+      <div className="flex justify-center pt-[40px]">
+        <button className="w-[199px] h-[30px] bg-colorFour rounded-full ">
+          <p className="font-medium font-montserratAlt text-[16px]">Efetuar o pagamento</p>
+        </button>
       </div>
     </div>
   );
