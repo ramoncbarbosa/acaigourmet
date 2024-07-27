@@ -7,8 +7,11 @@ import bg from "../../../public/Background/bg.svg";
 
 export function Background() {
   return (
-    <div className="relative min-h-screen flex flex-col">
-      <div className="flex flex-row justify-between mx-[76px]">
+    <div className="relative min-h-screen flex flex-col overflow-hidden">
+      {/* Background SVG */}
+      <div className="absolute inset-0 top-[calc(78%+80px)] z-0 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${bg})` }}></div>
+
+      <div className="relative z-10 flex flex-row justify-between mx-[76px] flex-grow">
         <div className="flex flex-col items-start text-center">
           <h2 className="text-colorThree font-montserratAlt font-extrabold text-[100px]">
             Açaí
@@ -17,7 +20,7 @@ export function Background() {
           <p className="font-montserratAlt text-[20px]">O melhor da cidade.</p>
         </div>
 
-        <div className="flex justify-center items-center relative z-10">
+        <div className="flex justify-center items-center mb-[80px]">
           <img src={acai} alt="Açaí" className="mr-[100px]" />
         </div>
 
@@ -34,15 +37,17 @@ export function Background() {
         </div>
       </div>
 
-      {/* Background SVG */}
-      <div className="absolute inset-0 top-[calc(75%+80px)] z-0 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${bg})` }}></div>
-
       {/* Address Section */}
-      <div className="absolute bottom-0 right-0 mx-[76px] mb-[140px] mr-[74.1px] w-[293px] h-[134px] flex items-center justify-end">
+      <div className="absolute bottom-0 right-0 mx-[76px] mb-[140px] mr-[74.1px] w-[293px] h-[134px] flex items-center justify-end z-20">
         <img src={location} alt="Location" className="mr-[20px]" />
         <p className="font-normal text-[26px] font-montserratAlt">
           Rua Uma Aí, Bairro Aquele Lá, N° xxx
         </p>
+      </div>
+
+      {/* Extra space to simulate scrolling */}
+      <div className="relative z-10">
+        
       </div>
     </div>
   );
