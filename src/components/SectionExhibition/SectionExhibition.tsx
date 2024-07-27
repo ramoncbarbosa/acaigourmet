@@ -13,25 +13,37 @@ export default function SectionExhibition() {
         conhecido por oferecer uma série de benefícios à saúde.
       </p>
 
-{/* ////////////////////////////////////////////////////// */}
+      {/* ////////////////////////////////////////////////////// */}
 
       <div className="flex justify-center gap-[29px] mt-[120px]">
-        <div className="rounded-full bg-colorTwo">
-          <img src={prato1} alt="Prato 1" className="w-[247px] h-[436px] rounded-[134px_0_0_0]" />
-          
+        <div>
+          <div className="rounded-full bg-colorTwo">
+            <img src={prato1} alt="Prato 1" className="w-[247px] h-[436px] rounded-[134px_0_0_0]" />
+          </div>
+          <h2 className="mt-6">Rico em <br/> antioxidantes</h2>
+          <p>Combate os <br/> danos celulares e <br/> o envelhecimentos</p>
         </div>
-        
-        <div className="rounded-full bg-colorTwo">
-          <img src={prato2} alt="Prato 1" className="w-[247px] h-[436px] rounded-[134px_0_0_0]" />
+
+        <div>
+          <div className="rounded-full bg-colorTwo">
+            <img src={prato2} alt="Prato 1" className="w-[247px] h-[436px] rounded-[134px_0_0_0]" />
+          </div>
+          <h4 className="mt-6">Title</h4>
+          <p>lerolero</p>
         </div>
-        <div className="rounded-full bg-colorTwo">
-          <img src={prato3} alt="Prato 1" className="w-[247px] h-[436px] rounded-[134px_0_0_0]" />
+
+        <div>
+          <div className="rounded-full bg-colorTwo">
+            <img src={prato3} alt="Prato 1" className="w-[247px] h-[436px] rounded-[134px_0_0_0]" />
+          </div>
+          <h4 className="mt-6">Title</h4>
+          <p>lerolero</p>
+        </div>
+
+        {/* ////////////////////////////////////////////////////// */}
+        <div>
         </div>
       </div>
-
-{/* ////////////////////////////////////////////////////// */}
-
-
     </div>
   );
 }

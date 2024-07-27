@@ -1,6 +1,6 @@
-import facebook from "../../../public/Background/facebook.svg";
-import instagram from "../../../public/Background/instagram.svg";
-import whatsapp from "../../../public/Background/whatsapp.svg";
+import facebook from "../../../public/SocialButtons/facebook.svg";
+import instagram from "../../../public/SocialButtons/instagram.svg";
+import whatsapp from "../../../public/SocialButtons/whatsapp.svg";
 
 export function SocialButtons() {
   return (
