@@ -15,6 +15,7 @@ interface MenuProps {
 }
 
 export default function Menu({ onClose }: MenuProps) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [acaiItems, setAcaiItems] = useState<AcaiItem[]>(menuData);
 
   return (
